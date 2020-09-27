@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+	#primer_parrafo{
+		background-color:#A0A0A4;
+	}
+</style>
+<script src="Jquery/jquery-3.5.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+        //var colorFondo=$("#primer_parrafo").css("background-color","#2A1F55");
+		$("p.destacado").css("border","2px dotted #00BFFF");
+    });
+</script>
+</head>
+<body>
+<p id="primer_parrafo">Primer párrrafo</p>
+<p class="destacado">Párrafo destacado</p>
+<p>Tercer párrafo</p>
+</body>
+</html>

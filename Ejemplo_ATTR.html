@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script src="Jquery/jquery-3.5.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+        document.getElementById("img1").addEventListener("mouseover",cambiar,false);
+        document.getElementById("img1").addEventListener("mouseout",restaurar,false);
+    });
+	
+	function cambiar(){
+		$("img").attr("src","imgs/3.jpg");	
+	}
+	function restaurar(){
+		$("img").attr("src","imgs/1.jpg");	
+	}
+</script>
+</head>
+
+<body>
+<img src="imgs/1.jpg" id="img1" width="500px">
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejemplo errores</title>
+<style>
+	.micontenedor{
+		background-color:#0FF;
+	}
+</style>
+<script src="Jquery/jquery-3.5.1.min.js"></script>
+<script>
+	function validar(){
+		var n_usuario=document.getElementById("usuario").value;
+		if(n_usuario==""){
+			$("#usuario").after("Escribe tu nombre por favor");	
+		}
+	}
+
+</script>
+</head>
+
+<body>
+<form>
+<input name="" type="text" id="usuario"><br>
+
+<input name="" type="text" id="nombre"><br>
+
+<input name="" type="text" id="apellido"><br>
+
+<input type="button" value="Enviar" onClick="validar()">
+</form>
+</body>
+</html>
